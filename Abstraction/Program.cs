@@ -15,13 +15,13 @@ namespace Abstraction
         static void Main(string[] args)
         {
             Car car = new Car("Blue", 4, "Electric", 120);
-            car.display();
+            car.Display();
 
             Truck truck = new Truck("Brown", 6);
-            truck.display();
+            truck.Display();
 
             Bike bike = new Bike("matt black", 2, "Royal Enfield Bullet");
-            bike.display();
+            bike.Display();
 
             Console.ReadKey();
         }
@@ -50,7 +50,7 @@ namespace Abstraction
             this.topSpeed = topSpeed;
         }
 
-        public void display()
+        public void Display()
         {
             Console.WriteLine("\nThat " + color + " car is " + carType + " with a top speed of " + topSpeed + "km/hr.");
         }
@@ -63,7 +63,7 @@ namespace Abstraction
 
         }
 
-        public void display()
+        public void Display()
         {
             Console.WriteLine("\nThat " + color + " truck has " + tireCount + " wheels.");
         }
@@ -78,7 +78,7 @@ namespace Abstraction
             this.model = model;
         }
 
-        public void display()
+        public void Display()
         {
             Console.WriteLine("\nThat " + model + " looks sporty in " + color + " color.");
         }
